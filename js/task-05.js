@@ -4,7 +4,12 @@ let nameOutput = document.getElementById("name-output");
 
 input.oninput = function () {
     let newStr = input.value.trim();
-    (newStr === '' ) 
-    ? nameOutput.textContent = 'Anonymous'
-    : nameOutput.textContent = input.value;
+    if (newStr === ''){
+        nameOutput.textContent = 'Anonymous';
+    } else {
+        nameOutput.textContent = input.value;
+    }
 }
+
+
+
