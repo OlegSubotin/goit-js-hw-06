@@ -8,7 +8,8 @@ function getRandomHexColor() {
 
   btnItem.addEventListener('click', changeColor);
 
-function changeColor () {
-  document.body.style.backgroundColor = getRandomHexColor();
+function changeColor() {
+  const color = getRandomHexColor();
+  document.body.style.backgroundColor = color;
   spanItem.textContent = getRandomHexColor();
 }
