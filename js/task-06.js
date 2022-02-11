@@ -4,7 +4,7 @@ let inputLength = inputStr.getAttribute("data-length");
 let inputLengthNum = parseInt(inputLength);
 
 
-inputStr.oninput = function() {
+inputStr.addEventListener( 'input', function() {
   if (inputStr.value.length === inputLengthNum) {
     inputStr.classList.remove("invalid");
     inputStr.classList.add("valid");
@@ -14,6 +14,6 @@ inputStr.oninput = function() {
     inputStr.classList.add('invalid');
   }
 
-};
+});
 
 
