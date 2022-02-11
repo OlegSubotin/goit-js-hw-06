@@ -8,12 +8,15 @@ function formSubmit (evt){
     let formItems = evt.currentTarget.elements
     let email = formItems.email.value;
     let password = formItems.password.value;
+    const userData = {
+        email,
+        password,
+    };
 
     if (email==='' || password ===''){
         return alert('все поля должны быть заполнены');
-    }else{
-    console.log('email:', email);
-    console.log('password:', password);
+    } else {
+    console.log(userData);
     form.reset();
     }
 }
