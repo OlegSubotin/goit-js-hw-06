@@ -20,3 +20,4 @@ const markup = images
 
 galleryListEl.insertAdjacentHTML("beforeend", markup);
 galleryListEl.setAttribute('style', 'list-style-type:none; display:flex; justify-content: space-around;');
+
